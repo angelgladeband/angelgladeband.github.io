@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  var url = window.location.pathname;
+  var pathname = url.slice(1, url.indexOf("/", 1)).toLowerCase();
+  switch (pathname) {
+    case "about":
+      $("#nav-about").addClass("text-secondary").removeClass("text-white");
+      break;
+
+    case "tunes":
+      $("#nav-tunes").addClass("text-secondary").removeClass("text-white");
+      break;
+
+    case "buy-stuff":
+      $("#nav-buystuff").addClass("text-secondary").removeClass("text-white");
+      break;
+	  
+	case "contact-us":
+      $("#nav-contact").addClass("text-secondary").removeClass("text-white");
+      break;
+
+    default:
+      $("#nav-home").addClass("text-secondary").removeClass("text-white");
+  }
+</script>
